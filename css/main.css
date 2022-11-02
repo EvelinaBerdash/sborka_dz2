@@ -1,0 +1,102 @@
+body {
+    width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.link {
+    text-decoration: none
+}
+
+.header {
+    margin: 0 auto;
+    background-color: aquamarine;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.text {
+    margin: 0;
+}
+
+.links_box {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.red-text {
+    margin: 12px auto;
+    color: #e91414;
+    padding: 6px 0;
+    font-size: 1.1rem;
+}
+
+#main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.d_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.times_inputs {
+    color: #666;
+    font-size: 1.2rem;
+}
+
+.times_inputs input {
+    border: 1px solid #ccc;
+    padding: 15px 10px;
+    border-radius: 5px;
+    margin: 10px 6px;
+}
+
+.btn {
+    border: none;
+    box-shadow: 0 1px 1px #333;
+    margin: 0 3px;
+    border-radius: 6px;
+    padding: 14px 12px;
+    min-width: 100px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+}
+
+.btn_start {
+    background-color: #00ff00;
+}
+
+.btn_pause_resume {
+    background-color: #6db4f7;
+    display: none;
+}
+
+.btn_stop {
+    background-color: #e42828;
+    color: #fff;
+    display: none;
+}
