@@ -3,7 +3,7 @@ let interval
 let seconds = document.getElementById("seconds");
 
 const sound = new Howl({
-  src: ['/howler/tests/audio/sound1.mp3'],
+  src: ['./howler/tests/audio/sound1.mp3'],
   volume: 0.1
 });
 
