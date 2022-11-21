@@ -1,5 +1,7 @@
-import { diffDates, diffToHtml } from "./datecalc/datecalc.js";
-import { formatError } from "./datecalc/utils.js";
+import { diffDates, diffToHtml } from "./datecalc/datecalc";
+import { formatError } from "./datecalc/utils";
+import "./timer";
+import "../howler/dist/howler"
 
 const dateCalcForm = document.getElementById("datecalc");
 const dateCalcResult = document.getElementById("datecalc__result");
@@ -19,3 +21,19 @@ function handleCalcDates(event) {
     }
     else dateCalcResult.innerHTML = formatError("Для расчета промежутка необходимо заполнить оба поля");
 }
+
+const checkbox = document.querySelector(".input-checkbox");
+const text = document.querySelector(".text");
+const timer = document.getElementById("timerform");
+
+checkbox.addEventListener("change", function () {
+    if (checkbox.checked) {
+        dateCalcForm.classList.add("hidden");
+        timer.classList.remove("hidden");
+        text.textContent = "Переключиться на калькулятор дат";
+    } else {
+        timer.classList.add("hidden");
+        dateCalcForm.classList.remove("hidden");
+        text.textContent = "Переключиться на таймер";
+    }
+});

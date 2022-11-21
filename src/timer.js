@@ -1,9 +1,10 @@
 let sec_v = document.getElementById("sec");
 let interval
 let seconds = document.getElementById("seconds");
+import "../howler/dist/howler"
 
 const sound = new Howl({
-  src: ['./howler/tests/audio/sound1.mp3'],
+  src: ['../howler/tests/audio/sound1.mp3'],
   volume: 0.1
 });
 
